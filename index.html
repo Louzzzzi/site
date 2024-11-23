@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Енергозбереження: Внесок кожного учня</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .interactive {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .interactive button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive button:hover {
+            background-color: #45a049;
+        }
+        .answer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Енергозбереження: Внесок кожного учня</h1>
+        <nav>
+            <a href="#about">Про проект</a>
+            <a href="#ideas">Ідеї</a>
+            <a href="#gallery">Галерея</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Про проект</h2>
+            <p>Енергозбереження – це не лише зменшення витрат, але й крок до збереження нашої планети. Цей проект спрямований на підвищення свідомості учнів про важливість раціонального використання ресурсів.</p>
+        </section>
+
+        <section id="ideas">
+            <h2>Основні ідеї</h2>
+            <ul>
+                <li>Замінити лампи на енергозберігаючі.</li>
+                <li>Встановити датчики руху для освітлення в коридорах.</li>
+                <li>Запровадити сортування відходів.</li>
+                <li>Популяризувати ідеї енергозбереження серед учнів.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <p>Тут можна розмістити фотографії роботи над проектом, ілюстрації чи схеми. Ви можете додати їх пізніше.</p>
+        </section>
+
+        <div class="interactive">
+            <button id="question-button">Як я можу допомогти?</button>
+            <div class="answer" id="answer">
+                <p><strong>Порада:</strong> Завжди вимикайте світло, коли воно не потрібне, та використовуйте повторно папір для чернеток!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Автор сайту: Назар Козаногін</p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('question-button');
+        const answer = document.getElementById('answer');
+        button.addEventListener('click', () => {
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
